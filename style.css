@@ -1,36 +1,112 @@
+/* RESET + BASE */
+
 body {
   margin: 0;
-  background-color: #f7f3ed;
-  color: #2f3e2f;
+  background-color: #fbf8f2;
+  color: #1f2a24;
   font-family: 'Inter', sans-serif;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 90px 24px;
-  text-align: center;
 }
 
+/* HERO SECTION */
+
 .hero {
-  padding: 80px 20px;
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(31, 42, 36, 0.1);
 }
+
+/* TEXT BLOCK */
+
+.hero-overlay {
+  max-width: 700px;
+  padding: 40px 20px;
+  z-index: 2;
+}
+
+/* MAIN TITLE */
 
 .hero h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 4rem;
-  font-weight: 500;
-  margin: 0 0 20px;
-}
-
-.subtitle {
-  font-size: 1.1rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  font-weight: 400;
+  line-height: 0.95;
   margin-bottom: 24px;
 }
 
+/* SUBTITLE */
+
+.subtitle {
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* DATE + LOCATION */
+
 .hero p {
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+}
+
+/* 🌸 BOUGAINVILLEA */
+
+.flowers {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 320px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* 🐶 DALMATIAN (optional for later) */
+
+.dog {
+  position: absolute;
+  bottom: 0;
+  right: 6%;
+  width: 180px;
+  opacity: 0.9;
+}
+
+/* 🌿 OLIVE DIVIDER */
+
+.olive {
+  display: block;
+  margin: 28px auto;
+  width: 90px;
+  opacity: 0.8;
+}
+
+/* SECTION SPACING (for later pages) */
+
+section {
+  padding: 80px 20px;
+}
+
+/* BUTTON (for RSVP later) */
+
+button {
+  padding: 14px 28px;
+  background-color: #1f2a24;
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
 }
