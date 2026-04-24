@@ -27,9 +27,8 @@ body {
 /* ===== TEXT BLOCK ===== */
 
 .hero-overlay {
-  max-width: 700px;
-  padding: 20px;
-  z-index: 2;
+  max-width: 500px;   /* smaller = tighter layout */
+  margin: 0 auto;
 }
 
 /* ===== TITLE ===== */
@@ -63,11 +62,10 @@ body {
 
 .dog-center {
   display: block;
-  width: 260px;
-  max-width: 80%;
+  width: 180px;        /* hard cap */
+  max-width: 50%;      /* responsive fallback */
   height: auto;
-  margin: 28px auto 36px;
-  object-fit: contain;
+  margin: 20px auto 30px;
 }
 
 /* ===== 🌸 BOUGAINVILLEA (OPTIONAL CORNER) ===== */
