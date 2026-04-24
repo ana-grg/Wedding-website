@@ -63,10 +63,11 @@ body {
 
 .dog-center {
   display: block;
-  margin: 30px auto 40px;
-  width: 220px;
-  max-width: 70%;
-  opacity: 0.95;
+  width: 260px;
+  max-width: 80%;
+  height: auto;
+  margin: 28px auto 36px;
+  object-fit: contain;
 }
 
 /* ===== 🌸 BOUGAINVILLEA (OPTIONAL CORNER) ===== */
