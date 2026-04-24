@@ -27,17 +27,18 @@ body {
 /* ===== TEXT BLOCK ===== */
 
 .hero-overlay {
-  max-width: 500px;   /* smaller = tighter layout */
+  max-width: 480px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 /* ===== TITLE ===== */
 
 .hero h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-size: clamp(2.8rem, 7vw, 5rem);
   font-weight: 400;
-  line-height: 0.95;
+  line-height: 1;
   margin: 0 0 20px;
 }
 
