@@ -37,6 +37,8 @@ body {
 /* TITLE */
 
 .hero h1 {
+  color: red !important;
+}
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2.8rem, 7vw, 5rem);
   font-weight: 400;
