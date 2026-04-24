@@ -1,24 +1,36 @@
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
-  background-color: #f7f5f2;
+  background-color: #f7f3ed;
   color: #2f3e2f;
+  font-family: 'Inter', sans-serif;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 90px 24px;
   text-align: center;
 }
 
+.hero {
+  padding: 80px 20px;
+}
+
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 0 0 20px;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
