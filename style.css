@@ -1,4 +1,4 @@
-/* RESET + BASE */
+/* ===== BASE ===== */
 
 body {
   margin: 0;
@@ -12,7 +12,7 @@ body {
   margin: 0 auto;
 }
 
-/* HERO SECTION */
+/* ===== HERO SECTION ===== */
 
 .hero {
   position: relative;
@@ -21,29 +21,28 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  overflow: hidden;
-  border-bottom: 1px solid rgba(31, 42, 36, 0.1);
+  padding: 40px 20px;
 }
 
-/* TEXT BLOCK */
+/* ===== TEXT BLOCK ===== */
 
 .hero-overlay {
   max-width: 700px;
-  padding: 40px 20px;
+  padding: 20px;
   z-index: 2;
 }
 
-/* MAIN TITLE */
+/* ===== TITLE ===== */
 
 .hero h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  font-size: clamp(3.5rem, 8vw, 6rem);
   font-weight: 400;
   line-height: 0.95;
-  margin-bottom: 24px;
+  margin: 0 0 20px;
 }
 
-/* SUBTITLE */
+/* ===== SUBTITLE ===== */
 
 .subtitle {
   font-size: 0.75rem;
@@ -52,50 +51,51 @@ body {
   margin-bottom: 20px;
 }
 
-/* DATE + LOCATION */
+/* ===== DATE / LOCATION ===== */
 
-.hero p {
+.date-location {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.4rem;
+  margin-top: 10px;
 }
 
-/* 🌸 BOUGAINVILLEA */
+/* ===== 🐶 DALMATIAN (CENTERED FEATURE) ===== */
+
+.dog-center {
+  display: block;
+  margin: 30px auto 40px;
+  width: 220px;
+  max-width: 70%;
+  opacity: 0.95;
+}
+
+/* ===== 🌸 BOUGAINVILLEA (OPTIONAL CORNER) ===== */
 
 .flowers {
   position: absolute;
   top: -30px;
   right: -30px;
   width: 320px;
-  opacity: 0.7;
+  opacity: 0.65;
   pointer-events: none;
 }
 
-/* 🐶 DALMATIAN (optional for later) */
-
-.dog {
-  position: absolute;
-  bottom: 0;
-  right: 6%;
-  width: 180px;
-  opacity: 0.9;
-}
-
-/* 🌿 OLIVE DIVIDER */
+/* ===== 🌿 OLIVE DIVIDER (FOR LATER SECTIONS) ===== */
 
 .olive {
   display: block;
-  margin: 28px auto;
+  margin: 30px auto;
   width: 90px;
   opacity: 0.8;
 }
 
-/* SECTION SPACING (for later pages) */
+/* ===== GENERAL SECTION SPACING ===== */
 
 section {
   padding: 80px 20px;
 }
 
-/* BUTTON (for RSVP later) */
+/* ===== BUTTONS (FOR RSVP LATER) ===== */
 
 button {
   padding: 14px 28px;
@@ -109,4 +109,23 @@ button {
 
 button:hover {
   opacity: 0.9;
+}
+
+/* ===== MOBILE TWEAKS ===== */
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .dog-center {
+    width: 180px;
+    margin: 24px auto 32px;
+  }
+
+  .flowers {
+    width: 220px;
+    top: -20px;
+    right: -20px;
+  }
 }
