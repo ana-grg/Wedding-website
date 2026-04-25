@@ -1,12 +1,8 @@
-/* TEST: remove later */
-body {
-  background-color: #fbf8f2;
-}
-
-/* BASE */
+/* ===== BASE ===== */
 
 body {
   margin: 0;
+  background-color: #fbf8f2;
   color: #1f2a24;
   font-family: 'Inter', sans-serif;
 }
@@ -16,29 +12,30 @@ body {
   margin: 0 auto;
 }
 
-/* HERO */
+/* ===== HERO ===== */
 
 .hero {
+  position: relative; /* IMPORTANT for flowers positioning */
   min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 40px 20px;
+  overflow: hidden;
 }
 
-/* TEXT BLOCK */
+/* ===== TEXT BLOCK ===== */
 
 .hero-overlay {
   max-width: 480px;
   margin: 0 auto;
+  z-index: 2;
 }
 
-/* TITLE */
+/* ===== TITLE ===== */
 
 .hero h1 {
-  color: red !important;
-}
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2.8rem, 7vw, 5rem);
   font-weight: 400;
@@ -46,17 +43,18 @@ body {
   margin-bottom: 20px;
 }
 
-/* DOG — FORCE SIZE */
+/* ===== 🐶 DALMATIAN ===== */
 
 .dog-center {
   display: block;
-  width: 100px !important;
-  max-width: 100px !important;
+  width: 120px;
+  max-width: 60%;
   height: auto;
   margin: 20px auto 30px;
+  opacity: 0.95;
 }
 
-/* SUBTITLE */
+/* ===== SUBTITLE ===== */
 
 .subtitle {
   font-size: 0.7rem;
@@ -66,17 +64,51 @@ body {
   opacity: 0.7;
 }
 
-/* OLIVE */
+/* ===== 🌿 OLIVE DIVIDER ===== */
 
 .olive {
   display: block;
   width: 70px;
   margin: 18px auto 22px;
+  opacity: 0.8;
 }
 
-/* DATE */
+/* ===== DATE ===== */
 
 .date-location {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.3rem;
+}
+
+/* ===== 🌸 FLOWERS (TOP RIGHT) ===== */
+
+.flowers {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 260px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 75vh;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.4rem, 10vw, 4rem);
+  }
+
+  .dog-center {
+    width: 100px;
+  }
+
+  .flowers {
+    width: 180px;
+    top: -20px;
+    right: -20px;
+  }
 }
